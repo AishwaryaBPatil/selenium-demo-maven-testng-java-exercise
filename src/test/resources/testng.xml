@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
+<parameter name="browser" value="chrome"/>
 <listeners>
         <listener class-name="Util.Listeners"/>
     </listeners>
@@ -8,6 +9,8 @@
  		 <parameter name="browser" value="chrome"/>
          	<classes>
              	<class name="com.SeleniumProject.seleniumdemo.LoginTest"/>
+             	<class name="com.SeleniumProject.seleniumdemo.AddToCartTest"/>
+             	
           	</classes>
     </test>
     

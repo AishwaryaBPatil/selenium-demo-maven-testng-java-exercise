@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-14T16:22:14 IST" name="Suite" finished-at="2025-09-14T16:22:26 IST" duration-ms="11827">
+  <suite started-at="2025-09-14T20:28:26 IST" name="Suite" finished-at="2025-09-14T20:28:32 IST" duration-ms="6486">
     <groups>
     </groups>
-    <test started-at="2025-09-14T16:22:14 IST" name="ChromeBrowserTest" finished-at="2025-09-14T16:22:26 IST" duration-ms="11827">
+    <test started-at="2025-09-14T20:28:26 IST" name="ChromeBrowserTest" finished-at="2025-09-14T20:28:32 IST" duration-ms="6486">
       <class name="com.SeleniumProject.seleniumdemo.LoginTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.SeleniumProject.seleniumdemo.LoginTest@4167d97b]" started-at="2025-09-14T16:22:14 IST" name="setup" finished-at="2025-09-14T16:22:20 IST" duration-ms="6172" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.SeleniumProject.seleniumdemo.LoginTest@5b3f61ff]" started-at="2025-09-14T20:28:21 IST" name="setup" finished-at="2025-09-14T20:28:26 IST" duration-ms="4444" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,21 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="correctlogintest()[pri:0, instance:com.SeleniumProject.seleniumdemo.LoginTest@4167d97b]" started-at="2025-09-14T16:22:20 IST" name="correctlogintest" finished-at="2025-09-14T16:22:26 IST" duration-ms="5314" status="PASS">
+        <test-method signature="correctlogintest()[pri:0, instance:com.SeleniumProject.seleniumdemo.LoginTest@5b3f61ff]" started-at="2025-09-14T20:28:26 IST" name="correctlogintest" finished-at="2025-09-14T20:28:31 IST" duration-ms="5316" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- correctlogintest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.SeleniumProject.seleniumdemo.LoginTest@4167d97b]" started-at="2025-09-14T16:22:26 IST" name="tearDown" finished-at="2025-09-14T16:22:26 IST" duration-ms="289" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.SeleniumProject.seleniumdemo.LoginTest@5b3f61ff]" started-at="2025-09-14T20:28:34 IST" name="tearDown" finished-at="2025-09-14T20:28:36 IST" duration-ms="2056" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.SeleniumProject.seleniumdemo.LoginTest -->
+      <class name="com.SeleniumProject.seleniumdemo.AddToCartTest">
+        <test-method signature="addtocart()[pri:0, instance:com.SeleniumProject.seleniumdemo.AddToCartTest@4fbe37eb]" started-at="2025-09-14T20:28:31 IST" name="addtocart" finished-at="2025-09-14T20:28:32 IST" duration-ms="1065" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addtocart -->
+      </class> <!-- com.SeleniumProject.seleniumdemo.AddToCartTest -->
     </test> <!-- ChromeBrowserTest -->
   </suite> <!-- Suite -->
 </testng-results>
