@@ -17,7 +17,7 @@ public class AddToCart {
 	WebElement productImage;
 	
 	@FindBy(xpath="//*[@id=\"tbodyid\"]/div[2]/div/a")
-	WebElement addtocart;
+	WebElement addtocartbutton;
 	
 	public void clickproduct()
 	{
@@ -30,7 +30,7 @@ public class AddToCart {
 	public void addtocartclick()
 	{
 		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(20));
-		wait.until(ExpectedConditions.elementToBeClickable(addtocart)).click();
+		wait.until(ExpectedConditions.elementToBeClickable(addtocartbutton)).click();
 		
 	}
 	

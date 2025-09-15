@@ -8,13 +8,13 @@
   <test thread-count="5" name="ChromeBrowserTest(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.SeleniumProject.seleniumdemo.AddToCartTest">
+      <class name="com.SeleniumProject.seleniumdemo.LoginTest">
         <methods>
           <include name="setup"/>
-          <include name="addtocart"/>
+          <include name="invalidlogintest"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.SeleniumProject.seleniumdemo.AddToCartTest -->
+      </class> <!-- com.SeleniumProject.seleniumdemo.LoginTest -->
     </classes>
   </test> <!-- ChromeBrowserTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

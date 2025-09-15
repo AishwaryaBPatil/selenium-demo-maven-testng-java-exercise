@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.SeleniumProject.seleniumdemo.AddToCartTest">
+      <class name="com.SeleniumProject.seleniumdemo.LoginTest">
         <methods>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="addtocart"/>
+          <include name="validlogintest"/>
         </methods>
-      </class> <!-- com.SeleniumProject.seleniumdemo.AddToCartTest -->
+      </class> <!-- com.SeleniumProject.seleniumdemo.LoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

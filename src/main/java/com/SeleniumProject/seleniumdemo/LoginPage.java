@@ -20,7 +20,7 @@
 		@FindBy(id="loginpassword")
 		WebElement passwordfeild;
 		
-		@FindBy(linkText="Log in")
+		@FindBy(xpath="//*[@id=\"logInModal\"]/div/div/div[3]/button[2]")
 		WebElement Login;
 		
 		public LoginPage(WebDriver driver)
@@ -64,6 +64,7 @@
 	        //commit
 	        
 	    }
+		
 			
 	}
 

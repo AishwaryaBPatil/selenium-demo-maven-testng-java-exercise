@@ -1,6 +1,11 @@
 package com.SeleniumProject.seleniumdemo;
 
+import java.time.Duration;
+
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.TimeoutException;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
 public class AddToCartTest extends BaseClass {
@@ -11,13 +16,13 @@ public class AddToCartTest extends BaseClass {
 		AddToCart add=new AddToCart(driver);
 		add.clickproduct();
 		add.addtocartclick();
-		Thread.sleep(3000);
+		
 	}
 	
 	public void acceptalert()
 	{
-		Alert alert=driver.switchTo().alert();
-		alert.accept();
+		
+
 	}
 
 }
