@@ -16,6 +16,9 @@ public class AddToCart {
 	@FindBy(xpath="//a[@class='hrefch'and text()='Samsung galaxy s6']")
 	WebElement productImage;
 	
+	@FindBy(xpath="//*[@id=\"tbodyid\"]/div[2]/div/a")
+	WebElement addtocart;
+	
 	public void clickproduct()
 	{
 		System.out.println("hello");
@@ -23,6 +26,12 @@ public class AddToCart {
 		 wait.until(ExpectedConditions.elementToBeClickable(productImage)).click();
 		
 		//productImage.click();
+	}
+	public void addtocartclick()
+	{
+		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(20));
+		wait.until(ExpectedConditions.elementToBeClickable(addtocart)).click();
+		
 	}
 	
 	public AddToCart(WebDriver driver)
