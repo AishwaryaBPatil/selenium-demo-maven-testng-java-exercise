@@ -18,6 +18,10 @@ import org.testng.annotations.Parameters;
 
 	public class BaseClass  {
 		 static WebDriver driver;
+		 public static WebDriver getdriver()
+		 {
+			 return driver;
+		 }
 		
 		@Parameters("browser")
 		@BeforeSuite

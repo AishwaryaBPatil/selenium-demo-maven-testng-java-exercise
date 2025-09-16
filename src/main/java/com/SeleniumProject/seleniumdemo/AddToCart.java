@@ -2,6 +2,8 @@ package com.SeleniumProject.seleniumdemo;
 
 import java.time.Duration;
 
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -21,7 +23,7 @@ public class AddToCart {
 	
 	public void clickproduct()
 	{
-		System.out.println("hello");
+		//System.out.println("hello");
 		 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		 wait.until(ExpectedConditions.elementToBeClickable(productImage)).click();
 		
@@ -31,8 +33,17 @@ public class AddToCart {
 	{
 		WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(20));
 		wait.until(ExpectedConditions.elementToBeClickable(addtocartbutton)).click();
+		   try {
+		        WebDriverWait wa = new WebDriverWait(driver, Duration.ofSeconds(10));
+		        Alert alert = wa.until(ExpectedConditions.alertIsPresent());
+		        System.out.println("Alert text: " + alert.getText());
+		        alert.accept();
+		    } catch (TimeoutException e) {
+		        System.out.println("No alert present.");
+		    }
+		}
 		
-	}
+	
 	
 	public AddToCart(WebDriver driver)
 	{

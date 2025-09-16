@@ -16,13 +16,9 @@ public class AddToCartTest extends BaseClass {
 		AddToCart add=new AddToCart(driver);
 		add.clickproduct();
 		add.addtocartclick();
+	 
 		
 	}
 	
-	public void acceptalert()
-	{
-		
-
-	}
-
+	
 }

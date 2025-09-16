@@ -8,13 +8,13 @@
   <test thread-count="5" name="ChromeBrowserTest(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.SeleniumProject.seleniumdemo.LoginTest">
+      <class name="com.SeleniumProject.seleniumdemo.PlaceOrderTest">
         <methods>
+          <include name="requiredmessageerror"/>
           <include name="setup"/>
-          <include name="invalidlogintest"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.SeleniumProject.seleniumdemo.LoginTest -->
+      </class> <!-- com.SeleniumProject.seleniumdemo.PlaceOrderTest -->
     </classes>
   </test> <!-- ChromeBrowserTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->
