@@ -8,8 +8,8 @@
     <test name="ChromeBrowserTest">
  		 <parameter name="browser" value="chrome"/>
          	<classes>
-             	<!-- class name="com.SeleniumProject.seleniumdemo.LoginTest"/-->
-             	<!--class name="com.SeleniumProject.seleniumdemo.AddToCartTest"/-->
+             	<class name="com.SeleniumProject.seleniumdemo.LoginTest"/>
+             	<class name="com.SeleniumProject.seleniumdemo.AddToCartTest"/>
              	<class name="com.SeleniumProject.seleniumdemo.PlaceOrderTest"/>
              	
           	</classes>
