@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="5" passed="3" failed="0" skipped="0">
+<testng-results ignored="1" total="5" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-19T15:49:16 IST" name="Suite" finished-at="2025-09-19T15:49:43 IST" duration-ms="27394">
+  <suite started-at="2025-09-19T16:31:29 IST" name="Suite" finished-at="2025-09-19T16:32:04 IST" duration-ms="35394">
     <groups>
     </groups>
-    <test started-at="2025-09-19T15:49:16 IST" name="ChromeBrowserTest" finished-at="2025-09-19T15:49:43 IST" duration-ms="27394">
+    <test started-at="2025-09-19T16:31:29 IST" name="ChromeBrowserTest" finished-at="2025-09-19T16:32:04 IST" duration-ms="35394">
       <class name="com.SeleniumProject.seleniumdemo.LoginTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.SeleniumProject.seleniumdemo.LoginTest@6b58b9e9]" started-at="2025-09-19T15:49:16 IST" name="setup" finished-at="2025-09-19T15:49:19 IST" duration-ms="3317" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.SeleniumProject.seleniumdemo.LoginTest@6b58b9e9]" started-at="2025-09-19T16:31:29 IST" name="setup" finished-at="2025-09-19T16:31:31 IST" duration-ms="2460" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="validlogintest()[pri:1, instance:com.SeleniumProject.seleniumdemo.LoginTest@6b58b9e9]" started-at="2025-09-19T15:49:19 IST" name="validlogintest" finished-at="2025-09-19T15:49:31 IST" duration-ms="11651" status="PASS">
+        <test-method signature="validlogintest()[pri:1, instance:com.SeleniumProject.seleniumdemo.LoginTest@6b58b9e9]" started-at="2025-09-19T16:31:31 IST" name="validlogintest" finished-at="2025-09-19T16:31:43 IST" duration-ms="12240" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validlogintest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.SeleniumProject.seleniumdemo.LoginTest@6b58b9e9]" started-at="2025-09-19T15:49:31 IST" name="tearDown" finished-at="2025-09-19T15:49:31 IST" duration-ms="436" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.SeleniumProject.seleniumdemo.LoginTest@6b58b9e9]" started-at="2025-09-19T16:31:44 IST" name="tearDown" finished-at="2025-09-19T16:31:44 IST" duration-ms="549" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.SeleniumProject.seleniumdemo.LoginTest@6b58b9e9]" started-at="2025-09-19T15:49:31 IST" name="setup" finished-at="2025-09-19T15:49:34 IST" duration-ms="3116" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.SeleniumProject.seleniumdemo.LoginTest@6b58b9e9]" started-at="2025-09-19T16:31:44 IST" name="setup" finished-at="2025-09-19T16:31:47 IST" duration-ms="2848" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,17 +37,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="invalidlogintest()[pri:2, instance:com.SeleniumProject.seleniumdemo.LoginTest@6b58b9e9]" started-at="2025-09-19T15:49:34 IST" name="invalidlogintest" finished-at="2025-09-19T15:49:40 IST" duration-ms="5432" status="PASS">
+        <test-method signature="invalidlogintest()[pri:2, instance:com.SeleniumProject.seleniumdemo.LoginTest@6b58b9e9]" started-at="2025-09-19T16:31:47 IST" name="invalidlogintest" finished-at="2025-09-19T16:31:52 IST" duration-ms="5306" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidlogintest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.SeleniumProject.seleniumdemo.LoginTest@6b58b9e9]" started-at="2025-09-19T15:49:40 IST" name="tearDown" finished-at="2025-09-19T15:49:40 IST" duration-ms="279" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.SeleniumProject.seleniumdemo.LoginTest@6b58b9e9]" started-at="2025-09-19T16:31:52 IST" name="tearDown" finished-at="2025-09-19T16:31:53 IST" duration-ms="444" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.SeleniumProject.seleniumdemo.LoginTest -->
       <class name="com.SeleniumProject.seleniumdemo.AddToCartTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.SeleniumProject.seleniumdemo.AddToCartTest@6337c201]" started-at="2025-09-19T15:49:12 IST" name="setup" finished-at="2025-09-19T15:49:16 IST" duration-ms="3783" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.SeleniumProject.seleniumdemo.AddToCartTest@6337c201]" started-at="2025-09-19T16:31:24 IST" name="setup" finished-at="2025-09-19T16:31:29 IST" duration-ms="4954" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -58,15 +58,21 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="addtocart()[pri:0, instance:com.SeleniumProject.seleniumdemo.AddToCartTest@6337c201]" started-at="2025-09-19T15:49:40 IST" name="addtocart" finished-at="2025-09-19T15:49:43 IST" duration-ms="2934" status="PASS">
+        <test-method signature="addtocart()[pri:0, instance:com.SeleniumProject.seleniumdemo.AddToCartTest@6337c201]" started-at="2025-09-19T16:31:53 IST" name="addtocart" finished-at="2025-09-19T16:31:56 IST" duration-ms="3367" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addtocart -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.SeleniumProject.seleniumdemo.AddToCartTest@6337c201]" started-at="2025-09-19T15:49:44 IST" name="tearDown" finished-at="2025-09-19T15:49:44 IST" duration-ms="451" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.SeleniumProject.seleniumdemo.AddToCartTest@6337c201]" started-at="2025-09-19T16:32:05 IST" name="tearDown" finished-at="2025-09-19T16:32:06 IST" duration-ms="602" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.SeleniumProject.seleniumdemo.AddToCartTest -->
+      <class name="com.SeleniumProject.seleniumdemo.PlaceOrderTest">
+        <test-method signature="validplaceyourorder()[pri:1, instance:com.SeleniumProject.seleniumdemo.PlaceOrderTest@5c669da8]" started-at="2025-09-19T16:31:56 IST" name="validplaceyourorder" finished-at="2025-09-19T16:32:04 IST" duration-ms="7713" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validplaceyourorder -->
+      </class> <!-- com.SeleniumProject.seleniumdemo.PlaceOrderTest -->
     </test> <!-- ChromeBrowserTest -->
   </suite> <!-- Suite -->
 </testng-results>
