@@ -12,7 +12,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class PlaceOrderTest extends BaseClass {
-	@Test(priority=1, enabled=false)
+	@Test(priority=1)
 	public void validplaceyourorder()
 	{
 		try {
