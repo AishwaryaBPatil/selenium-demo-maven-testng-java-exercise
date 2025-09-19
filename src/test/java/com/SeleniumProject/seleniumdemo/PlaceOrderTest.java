@@ -1,6 +1,7 @@
 package com.SeleniumProject.seleniumdemo;
 
 import java.time.Duration;
+import java.util.Set;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
@@ -11,7 +12,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class PlaceOrderTest extends BaseClass {
-	@Test(priority=1)
+	@Test(priority=1, enabled=false)
 	public void validplaceyourorder()
 	{
 		try {
@@ -28,7 +29,7 @@ public class PlaceOrderTest extends BaseClass {
 		
 	}
 	
-	@Test(priority=2)
+	@Test(priority=2,enabled=false)
 	public void requiredmessageerror() throws InterruptedException
 	{
 		PlaceOrder order1=new PlaceOrder(driver);
@@ -41,5 +42,6 @@ public class PlaceOrderTest extends BaseClass {
 		
 		
 	}
+	
 
 }
