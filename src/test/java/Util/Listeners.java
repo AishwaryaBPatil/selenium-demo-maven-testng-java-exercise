@@ -13,16 +13,25 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
 public class Listeners implements ITestListener {
 WebDriver driver;
     private static ExtentReports extent = ExtentManager.getInstance();
     private static ThreadLocal<ExtentTest> test = new ThreadLocal<>();
+    @Override
+    public void onStart(ITestContext context) {
+        ExtentSparkReporter reporter = new ExtentSparkReporter("Reports/ExtentReport.html");
+        extent = new ExtentReports();
+        extent.attachReporter(reporter);
+    }
+
 
     @Override
     public void onTestStart(ITestResult result) {
-        ExtentTest extentTest = extent.createTest(result.getMethod().getMethodName());
-        test.set(extentTest);  // Store in ThreadLocal for thread-safe logging
+    	 ExtentTest extentTest = extent.createTest(result.getMethod().getMethodName());
+         // 2. Store in ThreadLocal
+         test.set(extentTest);
     }
 
     @Override
@@ -41,13 +50,21 @@ WebDriver driver;
 
     @Override
     public void onTestFailure(ITestResult result) {
-    	  Object currentClass1 = result.getInstance();
-    	    WebDriver driver = ((BaseClass) currentClass1).getdriver();
+        try {
+            // 1. Get the WebDriver from your BaseClass
+            Object currentClass1 = result.getInstance();
+            WebDriver driver = ((BaseClass) currentClass1).getdriver(); // make sure getdriver() returns WebDriver
 
-    	    String screenshotPath = ScreenShot.takeScreenshot(driver, result.getMethod().getMethodName());
+            // 2. Capture screenshot
+            String screenshotPath = ScreenShot.takeScreenshot(driver, result.getMethod().getMethodName());
 
-    	    test.get().fail("❌ Test Failed: " + result.getThrowable(),
-			        MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
+            // 3. Attach screenshot to ExtentReport
+            test.get().fail("❌ Test Failed: " + result.getThrowable(),
+                MediaEntityBuilder.createScreenCaptureFromPath(screenshotPath).build());
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
     
 

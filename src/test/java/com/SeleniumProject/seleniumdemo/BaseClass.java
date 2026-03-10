@@ -50,7 +50,8 @@ import org.testng.annotations.Parameters;
 							 throw new IllegalArgumentException("browser not supported" +browser);
 						 }
 			driver.manage().window().maximize();
-			driver.get("https://www.demoblaze.com/");
+			//driver.get("https://www.demoblaze.com/");
+			driver.get("https://rahulshettyacademy.com/AutomationPractice/");
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 	        System.out.println(driver.getTitle());
 			 } 

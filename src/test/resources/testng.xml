@@ -8,10 +8,24 @@
     <test name="ChromeBrowserTest">
  		 <parameter name="browser" value="chrome"/>
          	<classes>
-             	<class name="com.SeleniumProject.seleniumdemo.LoginTest"/>
-             	<class name="com.SeleniumProject.seleniumdemo.AddToCartTest"/>
-             	<class name="com.SeleniumProject.seleniumdemo.PlaceOrderTest"/>
-             	
+         	<!--
+             	 <class name="com.SeleniumProject.seleniumdemo.AddToCartTest"/>
+
+    
+    <methods>
+        <include name="windowhandle"/>
+    </methods>
+    -->
+
+    <!--
+    <class name="com.SeleniumProject.seleniumdemo.PlaceOrderTest"/>
+    -->
+
+    <!--
+    <class name="com.SeleniumProject.seleniumdemo.LoginTest"/>
+    -->
+
+    <class name="com.SeleniumProject.seleniumdemo.RahulShettyParcticetest"/>
           	</classes>
     </test>
     
