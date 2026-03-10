@@ -5,16 +5,29 @@
   <listeners>
     <listener class-name="Util.Listeners"/>
   </listeners>
-  <test thread-count="5" name="ChromeBrowserTest(failed)">
-    <parameter name="browser" value="chrome"/>
+  <test thread-count="5" name="FireFoxBrowserTest(failed)">
+    <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="com.SeleniumProject.seleniumdemo.RahulShettyParcticetest">
+      <class name="com.SeleniumProject.seleniumdemo.LoginTest">
         <methods>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="dropdown"/>
+          <include name="invalidlogintest"/>
         </methods>
-      </class> <!-- com.SeleniumProject.seleniumdemo.RahulShettyParcticetest -->
+      </class> <!-- com.SeleniumProject.seleniumdemo.LoginTest -->
     </classes>
-  </test> <!-- ChromeBrowserTest(failed) -->
+  </test> <!-- FireFoxBrowserTest(failed) -->
+  <test thread-count="5" name="EdgeBrowserTest(failed)">
+    <parameter name="browser" value="edge"/>
+    <classes>
+      <class name="com.SeleniumProject.seleniumdemo.LoginTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="validlogintest"/>
+          <include name="invalidlogintest"/>
+        </methods>
+      </class> <!-- com.SeleniumProject.seleniumdemo.LoginTest -->
+    </classes>
+  </test> <!-- EdgeBrowserTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

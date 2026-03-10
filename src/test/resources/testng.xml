@@ -8,31 +8,34 @@
     <test name="ChromeBrowserTest">
  		 <parameter name="browser" value="chrome"/>
          	<classes>
-         	
-             	 <class name="com.SeleniumProject.seleniumdemo.AddToCartTest"/>
+         	  <class name="com.SeleniumProject.seleniumdemo.LoginTest">
+         	  <methods>
+         	  <exclude name="invalidlogintest"/>
+         	  </methods>
+         	  </class>
+             	<!--<class name="com.SeleniumProject.seleniumdemo.AddToCartTest"/>-->
            
     
     <!--<methods>
         <include name="windowhandle"/>
     </methods>
-    -->
+   
 
    
     <class name="com.SeleniumProject.seleniumdemo.PlaceOrderTest"/>
    
-
+ -->
   
-    <class name="com.SeleniumProject.seleniumdemo.LoginTest"/>
+   
     
   
-    <class name="com.SeleniumProject.seleniumdemo.RahulShettyParcticetest"/>
-          	</classes>
+ </classes>
     </test>
     
     <test name="FireFoxBrowserTest">
     	<parameter name="browser" value="firefox"/>
     	<classes>
-    		<class name="SeleniumProject.selenium.LoginTest"></class>
+    		  <class name="com.SeleniumProject.seleniumdemo.LoginTest"/>
     
     	</classes>
     </test>
@@ -40,7 +43,7 @@
      <test name="EdgeBrowserTest">
      	<parameter name="browser" value="edge"/>
      		<classes>
-     			<class name="SeleniumProject.selenium.LoginTest"></class>
+     			  <class name="com.SeleniumProject.seleniumdemo.LoginTest"/>
      		</classes>
      </test>
 </suite> 

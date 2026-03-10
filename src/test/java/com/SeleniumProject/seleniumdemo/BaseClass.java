@@ -17,8 +17,8 @@ import org.testng.annotations.Parameters;
 	import io.github.bonigarcia.wdm.WebDriverManager;
 
 	public class BaseClass  {
-		 static WebDriver driver;
-		 public static WebDriver getdriver()
+		   static WebDriver driver;
+		 public  static WebDriver getdriver()
 		 {
 			 return driver;
 		 }
@@ -50,8 +50,8 @@ import org.testng.annotations.Parameters;
 							 throw new IllegalArgumentException("browser not supported" +browser);
 						 }
 			driver.manage().window().maximize();
-			//driver.get("https://www.demoblaze.com/");
-			driver.get("https://rahulshettyacademy.com/AutomationPractice/");
+			driver.get("https://www.demoblaze.com/");
+			//driver.get("https://rahulshettyacademy.com/AutomationPractice/");
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 	        System.out.println(driver.getTitle());
 			 } 

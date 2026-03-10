@@ -29,40 +29,9 @@ import org.testng.annotations.Parameters;
 
 
 public class LoginTest extends BaseClass {
-	 static WebDriver driver;
-		
-	@Parameters("browser")
-	@BeforeMethod
-	public void setup(String browser)
 	
-	{
-		 if (driver == null) {
-			 if(browser.equalsIgnoreCase("chrome"))
-			 {
-				 WebDriverManager.chromedriver().setup();
-				 driver=new ChromeDriver();
-			 }
-			 else
-				 if(browser.equalsIgnoreCase("firefox"))
-				 {
-					 WebDriverManager.firefoxdriver().setup();
-					 driver=new FirefoxDriver();
-				 }
-				 else
-					 if(browser.equalsIgnoreCase("edge")) {
-						 WebDriverManager.edgedriver().setup();
-						 driver=new EdgeDriver();
-					 }
-					 else
-					 {
-						 throw new IllegalArgumentException("browser not supported" +browser);
-					 }
-		driver.manage().window().maximize();
-		driver.get("https://www.demoblaze.com/");
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
-       System.out.println(driver.getTitle());
-		 } 
-	}
+		
+
 	@Test(priority=1)
 	public void validlogintest() throws InterruptedException 
 	{
@@ -70,16 +39,10 @@ public class LoginTest extends BaseClass {
        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		LoginPage login=new LoginPage(driver);
 		login.clicklogin();
-		login.username("Demodata");
-		login.password("demodata");
+		login.username("seleniumpractice");
+		login.password("selenium");
 		login.loginbutton();
-		try {
-		    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-		    wait.until(ExpectedConditions.alertIsPresent());
-		    driver.switchTo().alert().accept();
-		} catch (Exception e) {
-		    System.out.println("No alert found");
-		}
+		
 
 		
 		
@@ -92,7 +55,14 @@ public class LoginTest extends BaseClass {
 		    WebDriverWait wait2 = new WebDriverWait(driver, Duration.ofSeconds(30));
 		    wait1.until(ExpectedConditions
 		            .elementToBeClickable(By.xpath("//*[@id=\"logout2\"]"))).click();
-		    
+		   
+		    try {
+			    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+			    wait.until(ExpectedConditions.alertIsPresent());
+			    driver.switchTo().alert().accept();
+			} catch (Exception e) {
+			    System.out.println("No alert found");
+			}
 		
 	}
 
@@ -106,8 +76,8 @@ public class LoginTest extends BaseClass {
        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		LoginPage login1=new LoginPage(driver);
 		login1.clicklogin();
-		login1.username("Demodata");
-		login1.password("demodata1");
+		login1.username("seleniumpractice");
+		login1.password("selenium");
 		login1.loginbutton();
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         Alert alert = wait.until(ExpectedConditions.alertIsPresent());
@@ -118,13 +88,5 @@ public class LoginTest extends BaseClass {
 
 	}
 	
-	@AfterMethod
-	public void tearDown()
-	{
-		
-		if (driver != null) {
-            driver.quit();
-            driver=null;
-        }
-	}
+
 }

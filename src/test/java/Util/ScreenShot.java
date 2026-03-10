@@ -14,6 +14,7 @@ public class ScreenShot {
 	
 	
 		public static String takeScreenshot(WebDriver driver, String testName) throws IOException {
+		 
 	        String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
 	        String screenshotPath = System.getProperty("user.dir") + "/screenshots/" + testName + "_" + timeStamp + ".png";
 

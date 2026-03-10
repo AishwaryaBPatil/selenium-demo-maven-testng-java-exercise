@@ -16,7 +16,7 @@ import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
 public class Listeners implements ITestListener {
-WebDriver driver;
+
     private static ExtentReports extent = ExtentManager.getInstance();
     private static ThreadLocal<ExtentTest> test = new ThreadLocal<>();
     @Override
@@ -38,7 +38,7 @@ WebDriver driver;
     public void onTestSuccess(ITestResult result) {
         test.get().log(Status.PASS, "Test Passed: " + result.getMethod().getMethodName());
         Object currentClass = result.getInstance();
-        WebDriver driver = ((BaseClass) currentClass).getdriver();
+        WebDriver driver = BaseClass.getdriver();
 
         By loginBtn = By.id("login2"); 
         if (CommonUtil.isButtonClickable(driver, loginBtn)) {

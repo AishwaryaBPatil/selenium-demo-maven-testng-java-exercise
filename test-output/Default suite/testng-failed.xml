@@ -3,17 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.SeleniumProject.seleniumdemo.AddToCartTest">
+      <class name="com.SeleniumProject.seleniumdemo.LoginTest">
         <methods>
-          <include name="listlaptop"/>
+          <include name="validlogintest"/>
           <include name="setup"/>
-          <include name="clicknextpage"/>
-          <include name="selectcatagory"/>
+          <include name="invalidlogintest"/>
           <include name="tearDown"/>
-          <include name="addtocart"/>
-          <include name="listmonitor"/>
         </methods>
-      </class> <!-- com.SeleniumProject.seleniumdemo.AddToCartTest -->
+      </class> <!-- com.SeleniumProject.seleniumdemo.LoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
