@@ -1,8 +1,10 @@
 package com.SeleniumProject.seleniumdemo;
 
 import java.time.Duration;
+import java.util.List;
 
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -21,6 +23,50 @@ public class AddToCart {
 	@FindBy(xpath="//*[@id=\"tbodyid\"]/div[2]/div/a")
 	WebElement addtocartbutton;
 	
+	@FindBy(id="next2")
+	WebElement nextButton;
+	
+	@FindBy(xpath="//a[@class='list-group-item' and text()='Laptops']")
+	WebElement laptopbutton;
+	
+	@FindBy(xpath="//div[@class='row' and @id='tbodyid']") 
+	List<WebElement> multiplelaptop;
+	
+	@FindBy(xpath="//a[@class='list-group-item' and text()='Monitors']")
+	WebElement monitorbutton;
+	
+	@FindBy(xpath="//div[@class='row' and @id='tbodyid']")
+	List<WebElement> listmonitor;
+	
+	public void select_catagory()
+	{
+		WebDriverWait waitt=new WebDriverWait(driver,Duration.ofSeconds(10));
+		waitt.until(ExpectedConditions.elementToBeClickable(laptopbutton)).click();;
+	}
+	public void selectmultiplelaptop()
+	{
+		laptopbutton.click();
+		
+		for(WebElement lap:multiplelaptop)
+		{
+			System.out.println(lap.getText());
+		}
+		
+		
+	}
+	
+	public void selectMultiplemonitorbtn()
+	{
+		monitorbutton.click();
+		System.out.println("not");
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		for(WebElement moni:listmonitor)
+		{
+			System.out.println("not solved");
+			System.out.println(moni.getText());
+		}
+		
+	}
 	public void clickproduct()
 	{
 		//System.out.println("hello");
@@ -43,7 +89,12 @@ public class AddToCart {
 		    }
 		}
 		
-	
+	public void clickNextbutton()
+	{
+		JavascriptExecutor js=(JavascriptExecutor)driver;
+		js.executeScript("window.scrollBy(0,500)");
+		nextButton.click();
+	}
 	
 	public AddToCart(WebDriver driver)
 	{
@@ -51,4 +102,5 @@ public class AddToCart {
 		  PageFactory.initElements(driver, this);
 	}
 	
+
 }

@@ -1,17 +1,28 @@
 package com.SeleniumProject.seleniumdemo;
 
 import java.time.Duration;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Set;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.TimeoutException;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+
 public class PlaceOrderTest extends BaseClass {
+    public static ExtentReports extent;
+    public static ExtentTest test;
+
 	@Test(priority=1)
 	public void validplaceyourorder()
 	{
@@ -29,7 +40,7 @@ public class PlaceOrderTest extends BaseClass {
 		
 	}
 	
-	@Test(priority=2,enabled=false)
+	@Test(priority=2)
 	public void requiredmessageerror() throws InterruptedException
 	{
 		PlaceOrder order1=new PlaceOrder(driver);
@@ -42,6 +53,19 @@ public class PlaceOrderTest extends BaseClass {
 		
 		
 	}
+	@Test(priority=2,enabled=false)
+	public void dropdown()
+	{
+		driver.get("https://practice.expandtesting.com/dropdown");
+		WebElement selectdrop=driver.findElement(By.xpath("//select"));
+		Select se=new Select(selectdrop);
+		List<WebElement> list=se.getOptions();
+		ArrayList<WebElement> arr=new ArrayList<>(list);
+		for(WebElement li:arr)
+		{
+		System.out.println(li.getText());
+		}
+		}
 	
 
 }
