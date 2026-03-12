@@ -1,5 +1,5 @@
 package com.SeleniumProject.seleniumdemo;
-
+import Util.ExelUtil;
 import java.time.Duration;
 
 import org.openqa.selenium.Alert;
@@ -22,25 +22,34 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 
+import Util.ExelUtil;
 @Listeners(Util.Listeners.class)
 
 
 public class LoginTest extends BaseClass {
 	
-		
+	@DataProvider(name="login")
+	public Object[][] getdata() throws Exception
+	{
+		 System.out.println("DataProvider running...");
+	    return ExelUtil.getTestData();
+	}
 
-	@Test(priority=1)
-	public void validlogintest() throws InterruptedException 
+	@Test(dataProvider="login")
+	public void validlogintest(String username, String password) throws InterruptedException 
 	{
 	   
-       driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+      // driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		LoginPage login=new LoginPage(driver);
+		System.out.println("sfxuwscxz");
 		login.clicklogin();
-		login.username("seleniumpractice");
-		login.password("selenium");
+		login.username(username);
+		login.password(password);
+		System.out.println(username+" "+password);
 		login.loginbutton();
 		
 
@@ -66,7 +75,15 @@ public class LoginTest extends BaseClass {
 		
 	}
 
-
+@Test
+public void verifyUIloginpage()
+{
+	LoginPage lo=new LoginPage(driver);
+	String expectedcolor="whitee";
+	String actualcolor=lo.loginbuttoncolor();
+	Assert.assertEquals(expectedcolor, actualcolor,"Message if color is not same");
+	
+	}
 	@Test(priority=2)
 	public void invalidlogintest() throws InterruptedException
 	{

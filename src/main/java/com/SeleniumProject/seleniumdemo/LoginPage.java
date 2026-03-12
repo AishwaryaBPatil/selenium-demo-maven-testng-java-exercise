@@ -39,7 +39,12 @@
 
 	 		
 	     }
-		
+		public String loginbuttoncolor()
+		{
+			
+			 String color=Login.getCssValue("color");
+			 return color;
+		}
 		public void username(String username)
 		{
 			usernamefeild.sendKeys(username);

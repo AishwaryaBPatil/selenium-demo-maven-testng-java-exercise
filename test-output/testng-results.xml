@@ -1,44 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="6" passed="2" failed="3" skipped="0">
+<testng-results ignored="1" total="12" passed="1" failed="10" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-03-10T23:02:36 IST" name="Suite" finished-at="2026-03-10T23:04:40 IST" duration-ms="123972">
+  <suite started-at="2026-03-12T20:49:14 IST" name="Suite" finished-at="2026-03-12T20:50:06 IST" duration-ms="52381">
     <groups>
     </groups>
-    <test started-at="2026-03-10T23:02:36 IST" name="ChromeBrowserTest" finished-at="2026-03-10T23:03:11 IST" duration-ms="35074">
+    <test started-at="2026-03-12T20:49:14 IST" name="ChromeBrowserTest" finished-at="2026-03-12T20:49:56 IST" duration-ms="42130">
       <class name="com.SeleniumProject.seleniumdemo.LoginTest">
-        <test-method signature="validlogintest()[pri:1, instance:com.SeleniumProject.seleniumdemo.LoginTest@12a94400]" started-at="2026-03-10T23:02:36 IST" name="validlogintest" finished-at="2026-03-10T23:03:11 IST" duration-ms="34968" status="PASS">
+        <test-method signature="validlogintest(java.lang.String,java.lang.String)[pri:0, instance:com.SeleniumProject.seleniumdemo.LoginTest@2812b107]" started-at="2026-03-12T20:49:16 IST" name="validlogintest" data-provider="login" finished-at="2026-03-12T20:49:53 IST" duration-ms="36528" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[seleniumpractice]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[selenium]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validlogintest -->
-      </class> <!-- com.SeleniumProject.seleniumdemo.LoginTest -->
-    </test> <!-- ChromeBrowserTest -->
-    <test started-at="2026-03-10T23:03:12 IST" name="FireFoxBrowserTest" finished-at="2026-03-10T23:03:58 IST" duration-ms="46450">
-      <class name="com.SeleniumProject.seleniumdemo.LoginTest">
-        <test-method signature="validlogintest()[pri:1, instance:com.SeleniumProject.seleniumdemo.LoginTest@6676f6a0]" started-at="2026-03-10T23:03:12 IST" name="validlogintest" finished-at="2026-03-10T23:03:46 IST" duration-ms="34162" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validlogintest -->
-        <test-method signature="invalidlogintest()[pri:2, instance:com.SeleniumProject.seleniumdemo.LoginTest@6676f6a0]" started-at="2026-03-10T23:03:46 IST" name="invalidlogintest" finished-at="2026-03-10T23:03:57 IST" duration-ms="11483" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
+        <test-method signature="validlogintest(java.lang.String,java.lang.String)[pri:0, instance:com.SeleniumProject.seleniumdemo.LoginTest@2812b107]" started-at="2026-03-12T20:49:53 IST" name="validlogintest" data-provider="login" finished-at="2026-03-12T20:49:55 IST" duration-ms="2562" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Demdata]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Demodata]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.UnhandledAlertException">
             <message>
-              <![CDATA[Expected condition failed: waiting for alert to be present (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[unexpected alert open: {Alert text : User does not exist.}
+  (Session info: chrome=146.0.7680.66): User does not exist.
 Build info: version: '4.35.0', revision: '1c58e5028b'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.66, chrome: {chromedriverVersion: 146.0.7680.66 (8074df26380b..., userDataDir: C:\Users\AISHWA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63788}, goog:processID: 15720, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63788/devtoo..., se:cdpVersion: 146.0.7680.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c5883c0322d8da3fae9e5267d5f7e98e]]>
+Command: [585f627d025afa87d931e1c9b7b937e0, findElement {using=xpath, value=//*[@id="nameofuser"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.66, chrome: {chromedriverVersion: 146.0.7680.72 (cb10bb07c0a5..., userDataDir: C:\Users\AISHWA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54527}, goog:processID: 21004, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54527/devtoo..., se:cdpVersion: 146.0.7680.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 585f627d025afa87d931e1c9b7b937e0]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for alert to be present (tried for 10 second(s) with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : User does not exist.}
+  (Session info: chrome=146.0.7680.66): User does not exist.
 Build info: version: '4.35.0', revision: '1c58e5028b'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.66, chrome: {chromedriverVersion: 146.0.7680.66 (8074df26380b..., userDataDir: C:\Users\AISHWA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63788}, goog:processID: 15720, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63788/devtoo..., se:cdpVersion: 146.0.7680.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c5883c0322d8da3fae9e5267d5f7e98e
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at com.SeleniumProject.seleniumdemo.LoginTest.invalidlogintest(LoginTest.java:83)
+Command: [585f627d025afa87d931e1c9b7b937e0, findElement {using=xpath, value=//*[@id="nameofuser"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.66, chrome: {chromedriverVersion: 146.0.7680.72 (cb10bb07c0a5..., userDataDir: C:\Users\AISHWA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54527}, goog:processID: 21004, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54527/devtoo..., se:cdpVersion: 146.0.7680.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 585f627d025afa87d931e1c9b7b937e0
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
+at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+at com.SeleniumProject.seleniumdemo.LoginTest.validlogintest(LoginTest.java:60)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -67,15 +98,352 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validlogintest -->
+        <test-method signature="verifyUIloginpage()[pri:0, instance:com.SeleniumProject.seleniumdemo.LoginTest@2812b107]" started-at="2026-03-12T20:49:56 IST" name="verifyUIloginpage" finished-at="2026-03-12T20:49:56 IST" duration-ms="59" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Message if color is not same expected [rgba(255, 255, 255, 1)] but found [whitee]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Message if color is not same expected [rgba(255, 255, 255, 1)] but found [whitee]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at com.SeleniumProject.seleniumdemo.LoginTest.verifyUIloginpage(LoginTest.java:84)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUIloginpage -->
+      </class> <!-- com.SeleniumProject.seleniumdemo.LoginTest -->
+    </test> <!-- ChromeBrowserTest -->
+    <test started-at="2026-03-12T20:49:57 IST" name="FireFoxBrowserTest" finished-at="2026-03-12T20:50:01 IST" duration-ms="4543">
+      <class name="com.SeleniumProject.seleniumdemo.LoginTest">
+        <test-method signature="validlogintest(java.lang.String,java.lang.String)[pri:0, instance:com.SeleniumProject.seleniumdemo.LoginTest@20435c40]" started-at="2026-03-12T20:49:57 IST" name="validlogintest" data-provider="login" finished-at="2026-03-12T20:49:58 IST" duration-ms="1194" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[seleniumpractice]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[selenium]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <a class="nav-link" href="#" id="login2" data-toggle="modal" data-target="#logInModal" style="display: block;">...</a> is not clickable at point (1121, 37). Other element would receive the click: <div class="modal fade show" id="logInModal" tabindex="-1" role="dialog" aria-labelledby="logInModalLabel" style="display: block;">...</div>
+  (Session info: chrome=146.0.7680.66)
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [585f627d025afa87d931e1c9b7b937e0, clickElement {id=f.D753971B9ED68DA14D1740752F9E2ECF.d.D40BCC2F4E01324007D54FB6021062B2.e.260}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.66, chrome: {chromedriverVersion: 146.0.7680.72 (cb10bb07c0a5..., userDataDir: C:\Users\AISHWA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54527}, goog:processID: 21004, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54527/devtoo..., se:cdpVersion: 146.0.7680.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (585f627d025afa87d931e1c9b7b937e0)] -> id: login2]
+Session ID: 585f627d025afa87d931e1c9b7b937e0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a class="nav-link" href="#" id="login2" data-toggle="modal" data-target="#logInModal" style="display: block;">...</a> is not clickable at point (1121, 37). Other element would receive the click: <div class="modal fade show" id="logInModal" tabindex="-1" role="dialog" aria-labelledby="logInModalLabel" style="display: block;">...</div>
+  (Session info: chrome=146.0.7680.66)
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [585f627d025afa87d931e1c9b7b937e0, clickElement {id=f.D753971B9ED68DA14D1740752F9E2ECF.d.D40BCC2F4E01324007D54FB6021062B2.e.260}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.66, chrome: {chromedriverVersion: 146.0.7680.72 (cb10bb07c0a5..., userDataDir: C:\Users\AISHWA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54527}, goog:processID: 21004, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54527/devtoo..., se:cdpVersion: 146.0.7680.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (585f627d025afa87d931e1c9b7b937e0)] -> id: login2]
+Session ID: 585f627d025afa87d931e1c9b7b937e0
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+at com.SeleniumProject.seleniumdemo.LoginPage.clicklogin(LoginPage.java:34)
+at com.SeleniumProject.seleniumdemo.LoginTest.validlogintest(LoginTest.java:49)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validlogintest -->
+        <test-method signature="validlogintest(java.lang.String,java.lang.String)[pri:0, instance:com.SeleniumProject.seleniumdemo.LoginTest@20435c40]" started-at="2026-03-12T20:49:58 IST" name="validlogintest" data-provider="login" finished-at="2026-03-12T20:49:59 IST" duration-ms="1172" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Demdata]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Demodata]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <a class="nav-link" href="#" id="login2" data-toggle="modal" data-target="#logInModal" style="display: block;">...</a> is not clickable at point (1121, 37). Other element would receive the click: <div class="modal fade show" id="logInModal" tabindex="-1" role="dialog" aria-labelledby="logInModalLabel" style="display: block;">...</div>
+  (Session info: chrome=146.0.7680.66)
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [585f627d025afa87d931e1c9b7b937e0, clickElement {id=f.D753971B9ED68DA14D1740752F9E2ECF.d.D40BCC2F4E01324007D54FB6021062B2.e.260}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.66, chrome: {chromedriverVersion: 146.0.7680.72 (cb10bb07c0a5..., userDataDir: C:\Users\AISHWA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54527}, goog:processID: 21004, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54527/devtoo..., se:cdpVersion: 146.0.7680.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (585f627d025afa87d931e1c9b7b937e0)] -> id: login2]
+Session ID: 585f627d025afa87d931e1c9b7b937e0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a class="nav-link" href="#" id="login2" data-toggle="modal" data-target="#logInModal" style="display: block;">...</a> is not clickable at point (1121, 37). Other element would receive the click: <div class="modal fade show" id="logInModal" tabindex="-1" role="dialog" aria-labelledby="logInModalLabel" style="display: block;">...</div>
+  (Session info: chrome=146.0.7680.66)
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [585f627d025afa87d931e1c9b7b937e0, clickElement {id=f.D753971B9ED68DA14D1740752F9E2ECF.d.D40BCC2F4E01324007D54FB6021062B2.e.260}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.66, chrome: {chromedriverVersion: 146.0.7680.72 (cb10bb07c0a5..., userDataDir: C:\Users\AISHWA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54527}, goog:processID: 21004, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54527/devtoo..., se:cdpVersion: 146.0.7680.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (585f627d025afa87d931e1c9b7b937e0)] -> id: login2]
+Session ID: 585f627d025afa87d931e1c9b7b937e0
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+at com.SeleniumProject.seleniumdemo.LoginPage.clicklogin(LoginPage.java:34)
+at com.SeleniumProject.seleniumdemo.LoginTest.validlogintest(LoginTest.java:49)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validlogintest -->
+        <test-method signature="verifyUIloginpage()[pri:0, instance:com.SeleniumProject.seleniumdemo.LoginTest@20435c40]" started-at="2026-03-12T20:50:00 IST" name="verifyUIloginpage" finished-at="2026-03-12T20:50:00 IST" duration-ms="28" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Message if color is not same expected [rgba(255, 255, 255, 1)] but found [whitee]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Message if color is not same expected [rgba(255, 255, 255, 1)] but found [whitee]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at com.SeleniumProject.seleniumdemo.LoginTest.verifyUIloginpage(LoginTest.java:84)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUIloginpage -->
+        <test-method signature="invalidlogintest()[pri:2, instance:com.SeleniumProject.seleniumdemo.LoginTest@20435c40]" started-at="2026-03-12T20:50:00 IST" name="invalidlogintest" finished-at="2026-03-12T20:50:01 IST" duration-ms="1135" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <a class="nav-link" href="#" id="login2" data-toggle="modal" data-target="#logInModal" style="display: block;">...</a> is not clickable at point (1121, 37). Other element would receive the click: <div class="modal fade show" id="logInModal" tabindex="-1" role="dialog" aria-labelledby="logInModalLabel" style="display: block;">...</div>
+  (Session info: chrome=146.0.7680.66)
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [585f627d025afa87d931e1c9b7b937e0, clickElement {id=f.D753971B9ED68DA14D1740752F9E2ECF.d.D40BCC2F4E01324007D54FB6021062B2.e.260}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.66, chrome: {chromedriverVersion: 146.0.7680.72 (cb10bb07c0a5..., userDataDir: C:\Users\AISHWA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54527}, goog:processID: 21004, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54527/devtoo..., se:cdpVersion: 146.0.7680.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (585f627d025afa87d931e1c9b7b937e0)] -> id: login2]
+Session ID: 585f627d025afa87d931e1c9b7b937e0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a class="nav-link" href="#" id="login2" data-toggle="modal" data-target="#logInModal" style="display: block;">...</a> is not clickable at point (1121, 37). Other element would receive the click: <div class="modal fade show" id="logInModal" tabindex="-1" role="dialog" aria-labelledby="logInModalLabel" style="display: block;">...</div>
+  (Session info: chrome=146.0.7680.66)
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [585f627d025afa87d931e1c9b7b937e0, clickElement {id=f.D753971B9ED68DA14D1740752F9E2ECF.d.D40BCC2F4E01324007D54FB6021062B2.e.260}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.66, chrome: {chromedriverVersion: 146.0.7680.72 (cb10bb07c0a5..., userDataDir: C:\Users\AISHWA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54527}, goog:processID: 21004, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54527/devtoo..., se:cdpVersion: 146.0.7680.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (585f627d025afa87d931e1c9b7b937e0)] -> id: login2]
+Session ID: 585f627d025afa87d931e1c9b7b937e0
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+at com.SeleniumProject.seleniumdemo.LoginPage.clicklogin(LoginPage.java:34)
+at com.SeleniumProject.seleniumdemo.LoginTest.invalidlogintest(LoginTest.java:95)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidlogintest -->
       </class> <!-- com.SeleniumProject.seleniumdemo.LoginTest -->
     </test> <!-- FireFoxBrowserTest -->
-    <test started-at="2026-03-10T23:03:58 IST" name="EdgeBrowserTest" finished-at="2026-03-10T23:04:40 IST" duration-ms="41941">
+    <test started-at="2026-03-12T20:50:01 IST" name="EdgeBrowserTest" finished-at="2026-03-12T20:50:06 IST" duration-ms="5078">
       <class name="com.SeleniumProject.seleniumdemo.LoginTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.SeleniumProject.seleniumdemo.LoginTest@5a5338df]" started-at="2026-03-10T23:02:32 IST" name="setup" finished-at="2026-03-10T23:02:36 IST" duration-ms="4019" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.SeleniumProject.seleniumdemo.LoginTest@479ceda0]" started-at="2026-03-12T20:48:51 IST" name="setup" finished-at="2026-03-12T20:49:14 IST" duration-ms="22961" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -86,27 +454,59 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="validlogintest()[pri:1, instance:com.SeleniumProject.seleniumdemo.LoginTest@5a5338df]" started-at="2026-03-10T23:03:58 IST" name="validlogintest" finished-at="2026-03-10T23:04:18 IST" duration-ms="20041" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
+        <test-method signature="validlogintest(java.lang.String,java.lang.String)[pri:0, instance:com.SeleniumProject.seleniumdemo.LoginTest@479ceda0]" started-at="2026-03-12T20:50:01 IST" name="validlogintest" data-provider="login" finished-at="2026-03-12T20:50:03 IST" duration-ms="1151" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[seleniumpractice]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[selenium]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (c5883c0322d8da3fae9e5267d5f7e98e)] -> id: login2] (tried for 20 second(s) with 500 milliseconds interval)
+              <![CDATA[element click intercepted: Element <a class="nav-link" href="#" id="login2" data-toggle="modal" data-target="#logInModal" style="display: block;">...</a> is not clickable at point (1121, 37). Other element would receive the click: <div class="modal fade show" id="logInModal" tabindex="-1" role="dialog" aria-labelledby="logInModalLabel" style="display: block;">...</div>
+  (Session info: chrome=146.0.7680.66)
 Build info: version: '4.35.0', revision: '1c58e5028b'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.66, chrome: {chromedriverVersion: 146.0.7680.66 (8074df26380b..., userDataDir: C:\Users\AISHWA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63788}, goog:processID: 15720, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63788/devtoo..., se:cdpVersion: 146.0.7680.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c5883c0322d8da3fae9e5267d5f7e98e]]>
+Command: [585f627d025afa87d931e1c9b7b937e0, clickElement {id=f.D753971B9ED68DA14D1740752F9E2ECF.d.D40BCC2F4E01324007D54FB6021062B2.e.260}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.66, chrome: {chromedriverVersion: 146.0.7680.72 (cb10bb07c0a5..., userDataDir: C:\Users\AISHWA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54527}, goog:processID: 21004, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54527/devtoo..., se:cdpVersion: 146.0.7680.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (585f627d025afa87d931e1c9b7b937e0)] -> id: login2]
+Session ID: 585f627d025afa87d931e1c9b7b937e0]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (c5883c0322d8da3fae9e5267d5f7e98e)] -> id: login2] (tried for 20 second(s) with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a class="nav-link" href="#" id="login2" data-toggle="modal" data-target="#logInModal" style="display: block;">...</a> is not clickable at point (1121, 37). Other element would receive the click: <div class="modal fade show" id="logInModal" tabindex="-1" role="dialog" aria-labelledby="logInModalLabel" style="display: block;">...</div>
+  (Session info: chrome=146.0.7680.66)
 Build info: version: '4.35.0', revision: '1c58e5028b'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.66, chrome: {chromedriverVersion: 146.0.7680.66 (8074df26380b..., userDataDir: C:\Users\AISHWA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63788}, goog:processID: 15720, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63788/devtoo..., se:cdpVersion: 146.0.7680.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c5883c0322d8da3fae9e5267d5f7e98e
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+Command: [585f627d025afa87d931e1c9b7b937e0, clickElement {id=f.D753971B9ED68DA14D1740752F9E2ECF.d.D40BCC2F4E01324007D54FB6021062B2.e.260}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.66, chrome: {chromedriverVersion: 146.0.7680.72 (cb10bb07c0a5..., userDataDir: C:\Users\AISHWA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54527}, goog:processID: 21004, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54527/devtoo..., se:cdpVersion: 146.0.7680.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (585f627d025afa87d931e1c9b7b937e0)] -> id: login2]
+Session ID: 585f627d025afa87d931e1c9b7b937e0
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
 at com.SeleniumProject.seleniumdemo.LoginPage.clicklogin(LoginPage.java:34)
-at com.SeleniumProject.seleniumdemo.LoginTest.validlogintest(LoginTest.java:41)
+at com.SeleniumProject.seleniumdemo.LoginTest.validlogintest(LoginTest.java:49)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -135,31 +535,63 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validlogintest -->
-        <test-method signature="invalidlogintest()[pri:2, instance:com.SeleniumProject.seleniumdemo.LoginTest@5a5338df]" started-at="2026-03-10T23:04:19 IST" name="invalidlogintest" finished-at="2026-03-10T23:04:39 IST" duration-ms="20544" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
+        <test-method signature="validlogintest(java.lang.String,java.lang.String)[pri:0, instance:com.SeleniumProject.seleniumdemo.LoginTest@479ceda0]" started-at="2026-03-12T20:50:03 IST" name="validlogintest" data-provider="login" finished-at="2026-03-12T20:50:04 IST" duration-ms="1166" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Demdata]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Demodata]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (c5883c0322d8da3fae9e5267d5f7e98e)] -> id: login2] (tried for 20 second(s) with 500 milliseconds interval)
+              <![CDATA[element click intercepted: Element <a class="nav-link" href="#" id="login2" data-toggle="modal" data-target="#logInModal" style="display: block;">...</a> is not clickable at point (1121, 37). Other element would receive the click: <div class="modal fade show" id="logInModal" tabindex="-1" role="dialog" aria-labelledby="logInModalLabel" style="display: block;">...</div>
+  (Session info: chrome=146.0.7680.66)
 Build info: version: '4.35.0', revision: '1c58e5028b'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.66, chrome: {chromedriverVersion: 146.0.7680.66 (8074df26380b..., userDataDir: C:\Users\AISHWA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63788}, goog:processID: 15720, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63788/devtoo..., se:cdpVersion: 146.0.7680.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c5883c0322d8da3fae9e5267d5f7e98e]]>
+Command: [585f627d025afa87d931e1c9b7b937e0, clickElement {id=f.D753971B9ED68DA14D1740752F9E2ECF.d.D40BCC2F4E01324007D54FB6021062B2.e.260}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.66, chrome: {chromedriverVersion: 146.0.7680.72 (cb10bb07c0a5..., userDataDir: C:\Users\AISHWA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54527}, goog:processID: 21004, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54527/devtoo..., se:cdpVersion: 146.0.7680.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (585f627d025afa87d931e1c9b7b937e0)] -> id: login2]
+Session ID: 585f627d025afa87d931e1c9b7b937e0]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[ChromeDriver: chrome on windows (c5883c0322d8da3fae9e5267d5f7e98e)] -> id: login2] (tried for 20 second(s) with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a class="nav-link" href="#" id="login2" data-toggle="modal" data-target="#logInModal" style="display: block;">...</a> is not clickable at point (1121, 37). Other element would receive the click: <div class="modal fade show" id="logInModal" tabindex="-1" role="dialog" aria-labelledby="logInModalLabel" style="display: block;">...</div>
+  (Session info: chrome=146.0.7680.66)
 Build info: version: '4.35.0', revision: '1c58e5028b'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.66, chrome: {chromedriverVersion: 146.0.7680.66 (8074df26380b..., userDataDir: C:\Users\AISHWA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63788}, goog:processID: 15720, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63788/devtoo..., se:cdpVersion: 146.0.7680.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c5883c0322d8da3fae9e5267d5f7e98e
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+Command: [585f627d025afa87d931e1c9b7b937e0, clickElement {id=f.D753971B9ED68DA14D1740752F9E2ECF.d.D40BCC2F4E01324007D54FB6021062B2.e.260}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.66, chrome: {chromedriverVersion: 146.0.7680.72 (cb10bb07c0a5..., userDataDir: C:\Users\AISHWA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54527}, goog:processID: 21004, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54527/devtoo..., se:cdpVersion: 146.0.7680.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (585f627d025afa87d931e1c9b7b937e0)] -> id: login2]
+Session ID: 585f627d025afa87d931e1c9b7b937e0
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
 at com.SeleniumProject.seleniumdemo.LoginPage.clicklogin(LoginPage.java:34)
-at com.SeleniumProject.seleniumdemo.LoginTest.invalidlogintest(LoginTest.java:78)
+at com.SeleniumProject.seleniumdemo.LoginTest.validlogintest(LoginTest.java:49)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -188,11 +620,129 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validlogintest -->
+        <test-method signature="verifyUIloginpage()[pri:0, instance:com.SeleniumProject.seleniumdemo.LoginTest@479ceda0]" started-at="2026-03-12T20:50:04 IST" name="verifyUIloginpage" finished-at="2026-03-12T20:50:04 IST" duration-ms="37" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Message if color is not same expected [rgba(255, 255, 255, 1)] but found [whitee]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Message if color is not same expected [rgba(255, 255, 255, 1)] but found [whitee]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at com.SeleniumProject.seleniumdemo.LoginTest.verifyUIloginpage(LoginTest.java:84)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUIloginpage -->
+        <test-method signature="invalidlogintest()[pri:2, instance:com.SeleniumProject.seleniumdemo.LoginTest@479ceda0]" started-at="2026-03-12T20:50:05 IST" name="invalidlogintest" finished-at="2026-03-12T20:50:06 IST" duration-ms="1214" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <a class="nav-link" href="#" id="login2" data-toggle="modal" data-target="#logInModal" style="display: block;">...</a> is not clickable at point (1121, 37). Other element would receive the click: <div class="modal fade show" id="logInModal" tabindex="-1" role="dialog" aria-labelledby="logInModalLabel" style="display: block;">...</div>
+  (Session info: chrome=146.0.7680.66)
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [585f627d025afa87d931e1c9b7b937e0, clickElement {id=f.D753971B9ED68DA14D1740752F9E2ECF.d.D40BCC2F4E01324007D54FB6021062B2.e.260}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.66, chrome: {chromedriverVersion: 146.0.7680.72 (cb10bb07c0a5..., userDataDir: C:\Users\AISHWA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54527}, goog:processID: 21004, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54527/devtoo..., se:cdpVersion: 146.0.7680.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (585f627d025afa87d931e1c9b7b937e0)] -> id: login2]
+Session ID: 585f627d025afa87d931e1c9b7b937e0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a class="nav-link" href="#" id="login2" data-toggle="modal" data-target="#logInModal" style="display: block;">...</a> is not clickable at point (1121, 37). Other element would receive the click: <div class="modal fade show" id="logInModal" tabindex="-1" role="dialog" aria-labelledby="logInModalLabel" style="display: block;">...</div>
+  (Session info: chrome=146.0.7680.66)
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [585f627d025afa87d931e1c9b7b937e0, clickElement {id=f.D753971B9ED68DA14D1740752F9E2ECF.d.D40BCC2F4E01324007D54FB6021062B2.e.260}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.66, chrome: {chromedriverVersion: 146.0.7680.72 (cb10bb07c0a5..., userDataDir: C:\Users\AISHWA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54527}, goog:processID: 21004, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54527/devtoo..., se:cdpVersion: 146.0.7680.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (585f627d025afa87d931e1c9b7b937e0)] -> id: login2]
+Session ID: 585f627d025afa87d931e1c9b7b937e0
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+at com.SeleniumProject.seleniumdemo.LoginPage.clicklogin(LoginPage.java:34)
+at com.SeleniumProject.seleniumdemo.LoginTest.invalidlogintest(LoginTest.java:95)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidlogintest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.SeleniumProject.seleniumdemo.LoginTest@5a5338df]" started-at="2026-03-10T23:04:40 IST" name="tearDown" finished-at="2026-03-10T23:04:41 IST" duration-ms="535" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.SeleniumProject.seleniumdemo.LoginTest@479ceda0]" started-at="2026-03-12T20:50:07 IST" name="tearDown" finished-at="2026-03-12T20:50:07 IST" duration-ms="456" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -5,6 +5,19 @@
   <listeners>
     <listener class-name="Util.Listeners"/>
   </listeners>
+  <test thread-count="5" name="ChromeBrowserTest(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.SeleniumProject.seleniumdemo.LoginTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="validlogintest" invocation-numbers="1"/>
+          <include name="verifyUIloginpage"/>
+        </methods>
+      </class> <!-- com.SeleniumProject.seleniumdemo.LoginTest -->
+    </classes>
+  </test> <!-- ChromeBrowserTest(failed) -->
   <test thread-count="5" name="FireFoxBrowserTest(failed)">
     <parameter name="browser" value="firefox"/>
     <classes>
@@ -12,7 +25,9 @@
         <methods>
           <include name="setup"/>
           <include name="tearDown"/>
+          <include name="validlogintest" invocation-numbers="0 1"/>
           <include name="invalidlogintest"/>
+          <include name="verifyUIloginpage"/>
         </methods>
       </class> <!-- com.SeleniumProject.seleniumdemo.LoginTest -->
     </classes>
@@ -24,8 +39,9 @@
         <methods>
           <include name="setup"/>
           <include name="tearDown"/>
-          <include name="validlogintest"/>
+          <include name="validlogintest" invocation-numbers="0 1"/>
           <include name="invalidlogintest"/>
+          <include name="verifyUIloginpage"/>
         </methods>
       </class> <!-- com.SeleniumProject.seleniumdemo.LoginTest -->
     </classes>

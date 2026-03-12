@@ -53,7 +53,7 @@ import org.testng.annotations.Parameters;
 			driver.get("https://www.demoblaze.com/");
 			//driver.get("https://rahulshettyacademy.com/AutomationPractice/");
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
-	        System.out.println(driver.getTitle());
+	        //System.out.println(driver.getTitle());
 			 } 
 		}
 		
